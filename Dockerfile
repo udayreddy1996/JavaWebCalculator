@@ -5,7 +5,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the WAR file from your local machine to the container
-COPY target/webapp-0.2.war /app/webapp-0.2.war
+COPY /src/target/webapp-0.2.war /app/webapp-0.2.war
 
 # Expose the ports your application will listen on
 EXPOSE 8080
